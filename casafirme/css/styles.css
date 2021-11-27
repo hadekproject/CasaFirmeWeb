@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Ubuntu:wght@300;400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+/* CSS navbar y menu */
+
+
+.navbar{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.navbar .logo img{
+    width: 80px;
+    height: auto;
+    margin-left: 30px;
+}
+
+
+.navbar .menunav li{
+    display: inline-block;
+    padding: 0 10px;
+}
+
+.navbar .menunav li a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    color: #172243;
+}
+
+
+
+/* CSS Hero */
+
+.hero{
+    background: url(/casafirme/img/bghero2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: calc(100vh - 80px);
+}
+
+
+
+/* CSS sección iglesia */
+
+.iglesia{
+    display: flex;
+    flex-direction: column;
+}
+
+.iglesiaprimerarticulo{
+    display: flex;
+    padding: 100px 80px;
+    justify-content: space-between;
+}
+
+.imageniglesia{
+    display: flex;
+    justify-content: center;
+    flex-basis: 50%;
+}
+
+.iglesiaprimerarticulo .imageniglesia img {
+    width: 500px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.iglesiacontent{
+    padding: 20px 30px;
+    flex-basis: 50%;
+}
+
+.iglesiacontent .tittle{
+    font-size: 30px;
+    font-weight: 700;
+    padding-bottom: 30px;
+    color: #172243;
+}
+
+.iglesiacontent p{
+    font-size: 18px;
+    text-align: justify;
+    color: #172243;
+}
+
+.iglesiasegundoarticulo{
+    display: flex;
+    padding: 100px 80px;
+    justify-content: space-between;
+}
+
+.iglesiasegundoarticulo .imageniglesia img {
+    width: 500px;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+
+/* CSS seccion fundación */
+
+.fundacion{
+    color: #172243;
+    display: flex;
+}
+
+.fundacion .images{
+    background: #3176f4;
+    flex-basis: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.fundacion .images img{
+    width: 400px;
+    height: auto;
+    padding: 10px 20px;
+    border-radius: 40px;
+}
+
+.fundacion .fundacion-content{
+    flex-basis: 50%;
+    padding: 100px;
+}
+
+.fundacion .fundacion-content h2{
+    font-size: 40px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+.fundacion .fundacion-content p{
+    font-size: 18px;
+    text-align: justify;
+}
+
+
+/* CSS scroll to top botton */
+
+.scroll-btn i{
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    font-size: 30px;
+    padding: 10px 12px;
+    color: #fff;
+    background: #3176f4;
+    border-radius: 50%;
+}
+
+/* CSS Responsive menú */
+
+@media (max-width: 1000px){
+
+    /* CSS section responsive */
+
+    .iglesia{
+        flex-direction: column;
+    }
+
+    .iglesia .iglesiaprimerarticulo{
+        flex-direction: column;
+    }
+
+    .iglesia .iglesiasegundoarticulo{
+        flex-direction: column-reverse;
+    }
+
+    .iglesiacontent .tittle{
+        text-align: center;
+    }
+
+    .iglesiacontent p{
+        text-align: justify;
+    }
+
+
+
+
+    .fundacion{
+        flex-direction: column-reverse;
+    }
+}
+
+
+
+@media (max-width: 600px){
+
+    .navbar{
+        height: 30vh;
+    }
+
+    .hero{
+        height: calc(100vh - 30vh);
+    }
+
+    .navbar .logo img{
+        width: 200px;
+    }
+
+    .navbar .menunav li{
+        display: flex;
+        flex-direction: column;
+        padding: 20px 0;
+        align-items: center;
+    }
+
+    /* .menunav {
+        opacity: 0;
+    }
+
+    .menunav.active {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        top: 0;
+        left: 0;
+        background: #fff;
+        width: 100%;
+        height: 100vh;
+        opacity: 1;
+    }
+
+
+    .navbar .toggle {
+        position: relative;
+        background: url(/img/menu.png);
+        background-size: 30px;
+        background-position: center;
+        background-repeat: no-repeat;
+        right: 50px;
+        top: 10px;
+        width: 30px;
+        height: 30px;
+    }
+
+    .navbar .toggle.active {
+        position: relative;
+        background: url(/img/close.png);
+        background-size: 30px;
+        background-position: center;
+        background-repeat: no-repeat;
+        right: 50px;
+        top: 10px;
+        width: 30px;
+        height: 30px;
+    }
+    
+
+    .navbar .menunav li{
+        padding: 15px 0;
+    }
+
+    .navbar .menunav.active li a{
+        font-size: 30px;
+        font-weight: 500;
+        padding: 15px 0;
+    } */
+
+    /* CSS section responsive */
+
+    .iglesia{
+        flex-direction: column;
+    }
+
+
+}
