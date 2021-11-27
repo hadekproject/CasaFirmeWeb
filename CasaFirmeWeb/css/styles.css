@@ -49,7 +49,7 @@ html{
 /* CSS Hero */
 
 .hero{
-    background: url(/CasaFirmeWeb/img/bghero.jpg);
+    background: url(../img/bghero.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
