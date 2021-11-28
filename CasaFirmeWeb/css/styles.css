@@ -211,7 +211,7 @@ html, body{
 
 @media (max-width: 600px){
 
-    .navbar{
+    .navbar.active{
         height: 30vh;
     }
 
@@ -219,7 +219,7 @@ html, body{
         height: calc(100vh - 30vh);
     }
 
-    .navbar .logo img{
+    .navbar .logo.active img{
         width: 200px;
     }
 
@@ -228,6 +228,39 @@ html, body{
         flex-direction: column;
         padding: 20px 0;
         align-items: center;
+        visibility: hidden;
+    }
+
+    .navbar.active .menunav li{
+        display: flex;
+        flex-direction: column;
+        padding: 20px 0;
+        align-items: center;
+        visibility: visible;
+    }
+
+    .navbar .toggle {
+        position: relative;
+        background: url(../img/menu.png);
+        background-size: 30px;
+        background-position: center;
+        background-repeat: no-repeat;
+        right: 50px;
+        top: 10px;
+        width: 30px;
+        height: 30px;
+    }
+
+    .navbar .toggle.active {
+        position: relative;
+        background: url(../img/close.png);
+        background-size: 25px;
+        background-position: center;
+        background-repeat: no-repeat;
+        right: 30px;
+        top: -90px;
+        width: 30px;
+        height: 30px;
     }
 
     /* .menunav {
@@ -290,5 +323,36 @@ html, body{
         flex-direction: column;
     }
 
+    .iglesiaprimerarticulo{
+        padding: 50px 20px;
+    }
+
+    .iglesiasegundoarticulo{
+        padding: 20px 20px;
+    }
+
+    .iglesiacontent{
+        padding: 20px 5px;
+        
+    }
+
+    .iglesiasegundoarticulo .imageniglesia img {
+        width: 350px;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .iglesiaprimerarticulo .imageniglesia img {
+        width: 350px;
+        height: auto;
+        border-radius: 10px;
+    }
+
+
+
+
+    .fundacion .fundacion-content{
+        padding: 50px 20px;
+    }
 
 }
