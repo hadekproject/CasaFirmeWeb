@@ -211,8 +211,13 @@ html, body{
 
 @media (max-width: 600px){
 
+    .navbar{
+        transition: 0.4s;
+    }
+
     .navbar.active{
         height: 30vh;
+        transition: 0.4s;
     }
 
     .hero{
