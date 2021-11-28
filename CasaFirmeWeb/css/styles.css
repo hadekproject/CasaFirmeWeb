@@ -226,6 +226,7 @@ html, body{
 
     .navbar .logo.active img{
         width: 200px;
+        transition: 0.5s;
     }
 
     .navbar .menunav li{
